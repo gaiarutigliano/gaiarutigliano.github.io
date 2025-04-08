@@ -20,22 +20,22 @@
    * colors
    */
 
-  --cadet-blue-crayola: hsl(240, 10%, 70%);
+  --main-text: hsl(0, 0%, 12%);
   --gold-web-golden: hsl(50, 100%, 54%);
   --vivid-sky-blue: hsl(196, 84%, 63%);
-  --midnight-blue: hsl(231, 83%, 25%);
+  --midnight-blue: hsl(188, 68%, 25%);
   --minion-yellow: hsl(50, 100%, 64%);
   --independence: hsl(225, 24%, 27%);
-  --orange-soda: hsl(7, 96%, 61%);
-  --space-cadet: hsl(243, 23%, 18%);
+  --main-brown: hsl(14, 49%, 47%);
+  --main-bg-color: hsl(53, 100%, 98%);
   --fiery-rose: hsl(353, 83%, 65%);
-  --klein-blue: hsl(230, 80%, 39%);
+  --button-col: hsl(14, 49%, 47%);
   --bluetiful: hsl(222, 88%, 55%);
   --glaucous: hsl(230, 52%, 63%);
   --manatee: hsl(254, 7%, 65%);
   --rufous: hsl(2, 85%, 35%);
   --black: hsl(0, 0%, 0%);
-  --white: hsl(0, 0%, 100%);
+  --white: hsl(53, 100%, 98%);
 
   /**
    * typography
@@ -147,8 +147,8 @@ html {
 }
 
 body {
-  background-color: var(--space-cadet);
-  color: var(--cadet-blue-crayola);
+  background-color: var(--main-bg-color);
+  color: var(--main-text);
   font-size: 1.6rem;
   line-height: 1.6;
   overflow-x: hidden;
@@ -185,9 +185,9 @@ body {
   transition: var(--transition-2);
 }
 
-.btn-primary.blue { background-color: var(--klein-blue); }
+.btn-primary.blue { background-color: var(--button-col); }
 
-.btn-primary.blue:is(:hover, :focus) { background-color: var(--orange-soda); }
+.btn-primary.blue:is(:hover, :focus) { background-color: var(--main-brown); }
 
 .img-cover {
   width: 100%;
@@ -198,7 +198,7 @@ body {
 .section { padding-block: var(--section-padding); }
 
 .section-subtitle {
-  color: var(--orange-soda);
+  color: var(--main-brown);
   font-family: var(--ff-barlow);
   font-size: var(--fs-4);
   text-align: center;
@@ -231,7 +231,7 @@ body {
   position: fixed;
   padding-block: 15px;
   width: 100%;
-  background-color: var(--space-cadet);
+  background-color: var(--main-bg-color);
   height: 65px;
   box-shadow: var(--shadow);
   overflow: hidden;
@@ -287,10 +287,10 @@ body {
   transition: var(--transition-1);
 }
 
-.navbar-link:is(:hover, :focus) { color: var(--orange-soda); }
+.navbar-link:is(:hover, :focus) { color: var(--main-brown); }
 
 .navbar .btn {
-  background-color: var(--orange-soda);
+  background-color: var(--main-brown);
   margin-block-start: 15px;
 }
 
@@ -414,7 +414,7 @@ body {
 .portfolio-list > li:nth-child(even) .card-content { margin-inline-start: auto; }
 
 .portfolio-card .card-subtitle {
-  color: var(--orange-soda);
+  color: var(--main-brown);
   margin-block-end: 5px;
 }
 
@@ -432,7 +432,7 @@ body {
 }
 
 .portfolio-card .btn-link ion-icon {
-  color: var(--orange-soda);
+  color: var(--main-brown);
   font-size: 1.6rem;
 }
 
@@ -475,7 +475,7 @@ body {
 }
 
 .skills-progress {
-  background-color: var(--orange-soda);
+  background-color: var(--main-brown);
   height: 100%;
   border-radius: inherit;
 }
@@ -495,7 +495,7 @@ body {
 }
 
 .contact-card .card-subtitle {
-  color: var(--orange-soda);
+  color: var(--main-brown);
   font-family: var(--ff-barlow);
   font-size: var(--fs-4);
   font-weight: var(--fw-600);
@@ -527,7 +527,7 @@ textarea.contact-input {
 }
 
 .btn-submit {
-  background-color: var(--orange-soda);
+  background-color: var(--main-brown);
   color: var(--white);
   font-family: var(--ff-barlow);
   font-size: var(--fs-5);
@@ -606,7 +606,7 @@ textarea.contact-input {
 }
 
 .blog-card .card-tag {
-  color: var(--orange-soda);
+  color: var(--main-brown);
   margin-block-end: 5px;
 }
 
@@ -618,7 +618,7 @@ textarea.contact-input {
 
 .blog-card .card-title a { transition: var(--transition-2); }
 
-.blog-card .card-title a:is(:hover, :focus) { color: var(--orange-soda); }
+.blog-card .card-title a:is(:hover, :focus) { color: var(--main-brown); }
 
 
 
@@ -814,7 +814,7 @@ textarea.contact-input {
   }
 
   .header.active {
-    background-color: var(--space-cadet);
+    background-color: var(--main-bg-color);
     box-shadow: var(--shadow);
     padding-block: 20px;
   }
