@@ -20,22 +20,28 @@
    * colors
    */
 
-  --main-text: hsl(0, 0%, 12%);
+
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(53, 100%, 98%);
   --gold-web-golden: hsl(50, 100%, 54%);
   --vivid-sky-blue: hsl(196, 84%, 63%);
-  --midnight-blue: hsl(188, 68%, 25%);
   --minion-yellow: hsl(50, 100%, 64%);
   --independence: hsl(225, 24%, 27%);
-  --main-brown: hsl(14, 49%, 47%);
-  --main-bg-color: hsl(53, 100%, 98%);
   --fiery-rose: hsl(353, 83%, 65%);
-  --button-col: hsl(14, 49%, 47%);
   --bluetiful: hsl(222, 88%, 55%);
   --glaucous: hsl(230, 52%, 63%);
   --manatee: hsl(254, 7%, 65%);
   --rufous: hsl(2, 85%, 35%);
-  --black: hsl(0, 0%, 0%);
-  --white: hsl(53, 100%, 98%);
+
+  /* --main-brown: hsl(14, 49%, 47%); */
+  --main-text: hsl(0, 0%, 12%);
+  --main-brown: hsl(28, 67%, 44%);
+  --light-brown: hsl(32, 64%, 72%);
+  --hashtag-color: hsl(0, 0%, 12%);
+  
+  --main-bg-color: hsl(53, 100%, 98%);
+  --button-col: var(--main-brown);
+  --h3-color: hsl(0, 0%, 12%);
 
   /**
    * typography
@@ -204,9 +210,17 @@ body {
   text-align: center;
 }
 
+.h1{
+  color: var(--main-text);
+  font-family: var(--ff-poppins);
+  font-weight: var(--fw-700);
+  font-size: var(--fs-1);
+  line-height: 1.3;
+}
+
 .h2,
 .h3 {
-  color: var(--white);
+  color: var(--h3-color);
   font-family: var(--ff-barlow);
   font-weight: var(--fw-600);
   line-height: 1.3;
@@ -218,6 +232,9 @@ body {
 
 .section-title,
 .section-text { text-align: center; }
+.hashtag {
+  color: var(--hashtag-color);
+}
 
 
 
@@ -251,7 +268,7 @@ body {
 }
 
 .logo {
-  color: var(--white);
+  color: var(--black);
   font-family: var(--ff-poppins);
   font-size: 2.4rem;
 }
@@ -281,7 +298,7 @@ body {
 }
 
 .navbar-link {
-  color: var(--white);
+  color: var(--main-text);
   font-family: var(--ff-barlow);
   padding-block: 3px;
   transition: var(--transition-1);
@@ -306,7 +323,8 @@ body {
 .rotate-img { display: none; }
 
 .hero {
-  background-image: url("../images/hero-bg.jpg");
+  /* background-image: url("../images/hero-bg.jpg"); */
+  background-color: var(--light-brown);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -329,7 +347,7 @@ body {
 
 .hero-content {
   text-align: center;
-  color: var(--white);
+  color: var(--main-text);
 }
 
 .hero-title {
@@ -379,7 +397,7 @@ body {
 
 .about :is(.section-title, .section-subtitle, .section-text) { text-align: left; }
 
-.about :is(.section-title, .section-text) { margin-block-end: 30px; }
+.about :is(.section-title, .section-text) { margin-block-end: 10px; }
 
 
 
@@ -489,7 +507,7 @@ body {
 \*-----------------------------------*/
 
 .contact-card {
-  background-color: var(--midnight-blue);
+  background-color: var(--light-brown);
   padding: 50px 25px;
   border-radius: var(--radius-20);
 }
@@ -629,7 +647,7 @@ textarea.contact-input {
 \*-----------------------------------*/
 
 .footer {
-  background-color: var(--independence);
+  background-color: var(--main-brown);
   padding-block: 60px;
 }
 
@@ -669,7 +687,7 @@ textarea.contact-input {
 \*-----------------------------------*/
 
 .back-to-top {
-  color: var(--white);
+  color: var(--black);
   font-size: 1.3rem;
   position: fixed;
   bottom: 160px;
@@ -694,7 +712,7 @@ textarea.contact-input {
   left: calc(100% + 7px);
   width: 100px;
   height: 1px;
-  background-color: var(--white);
+  background-color: var(--black);
 }
 
 
@@ -814,7 +832,7 @@ textarea.contact-input {
   }
 
   .header.active {
-    background-color: var(--main-bg-color);
+    background-color: var(--light-brown);
     box-shadow: var(--shadow);
     padding-block: 20px;
   }
