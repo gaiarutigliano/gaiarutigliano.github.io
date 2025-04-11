@@ -141,6 +141,10 @@ textarea {
 
 button { cursor: pointer; }
 
+a {
+  display: inline;
+}
+
 input,
 textarea { width: 100%; }
 
@@ -178,6 +182,7 @@ body {
   #REUSED STYLE
 \*-----------------------------------*/
 
+.preamble { padding-inline: 20px; }
 .container { padding-inline: 20px; }
 
 .btn {
@@ -207,7 +212,7 @@ body {
   color: var(--main-brown);
   font-family: var(--ff-barlow);
   font-size: var(--fs-4);
-  text-align: center;
+  /* text-align: center; */
 }
 
 .h1{
@@ -961,6 +966,12 @@ textarea.contact-input {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 80px;
+  }
+
+  .preamble {
+    padding-inline: 20px;
+    max-width: 1050px;
+    margin-inline: auto;
   }
 
   .about-banner {
