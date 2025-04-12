@@ -182,6 +182,16 @@ textarea {
   transition: var(--transition-1);
 }
 
+.navbar-toggler-icon {
+  color: black;
+}
+
+.navbar-toggler {
+  border: none; /* Remove the default border */
+  background-color: transparent; /* Make the background transparent */
+}
+
+
 /* HERO */
 .hero {
   /* height: 100vh; */
@@ -236,6 +246,29 @@ textarea {
 .nl {
   line-height: 1 !important; /* Adjust this value as needed */
   margin-bottom: 0.5rem; /* Optional: adds space after the paragraph */
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 16px;
+  color: var(--main-brown);
+  opacity: 0.4; /* Makes it semitransparent */
 }
 
 
