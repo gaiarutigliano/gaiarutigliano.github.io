@@ -182,6 +182,14 @@ textarea {
   transition: var(--transition-1);
 }
 
+.navbar-nav .btn.btn-primary.nav-link {
+  color: var(--white);
+}
+
+.navbar-nav .btn.btn-primary.nav-link:hover {
+  color: var(--white);
+}
+
 .navbar-toggler-icon {
   color: black;
 }
@@ -229,6 +237,7 @@ textarea {
   line-height: 1; /* Adjust this value as needed */
   margin-bottom: 0.5rem; /* Optional: adds space after the paragraph */
   font-family: var(--ff-barlow);
+  font-size: var(--fs-6);
 }
 
 /* PORTFOLIO */
